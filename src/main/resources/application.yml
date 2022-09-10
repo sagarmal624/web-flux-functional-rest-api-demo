@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: spring_reactive_demo
+#      username: root
+#      password: India@2022
+#      authentication-database: admin
+# Change the uat and prod profiles
+server:
+  port: 8083
